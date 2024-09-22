@@ -1,17 +1,27 @@
 body {
     margin: 0;
-    background-color: rgb(43, 43, 43);
+
 }
 
 header {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:white;
+    background-color:rgb(46, 46, 83);
 }
 
-h3 {
-    padding-top: 0.8ex;
-    padding-left: 2ex;
-    padding-bottom: 3ex;
+#heading {
+    padding-left: 30%;
+    display: flex;
+    text-align: center;
+}
+
+#heading h3 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#name {
+    padding-left: 0.8ex;
+    color:yellow;
 }
 
 nav {
@@ -44,7 +54,7 @@ nav {
 
 footer {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(43, 43, 43);
+    background-color:rgb(46, 46, 83);
     color: white;
     padding-bottom: 5ex;
     text-align: center;
