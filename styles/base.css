@@ -183,6 +183,7 @@ footer {
 #date-display {
     font-family:var(--heading-font);
     display: flex;
+    ;
     padding-left: 40%;
     margin: 0 auto;
 }

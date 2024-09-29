@@ -1,0 +1,106 @@
+@media screen and (max-width: 768px) {
+  .nav-links {
+      position: absolute;
+      right: 0;
+      height: 15vh;
+      top: 0;
+      background-color:rgb(46, 46, 83);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+      opacity: 0;
+  }
+
+  .burger {
+      display: block;
+      cursor: pointer;
+  }
+
+  .burger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px;
+      transition: all 0.3s ease;
+  }
+
+  .nav-active {
+      transform: translateX(0);
+  }
+
+  @keyframes navLinkFade {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+
+  .nav-links li {
+      animation: navLinkFade 0.5s ease forwards 0.5s;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .toggle .line2 {
+    opacity: 0;
+  }
+  
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .menu-backdrop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color:rgb(46, 46, 83);
+    /* Ensure it's below the nav-links but above other content */
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    border-style: solid;
+    border-top: 0;
+    border-bottom: 0;
+    border-width:1px;
+  }
+
+  .heading {
+    text-align: center;
+    padding: 2px;
+  }
+
+  .gallery {
+    display:list-item;
+    justify-items: center;
+  }
+
+  .gallery div {
+    text-align: center;
+  }
+
+  footer {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:rgb(46, 46, 83);
+    color: white;
+    padding-bottom: 0.5ex;
+    padding-top: 0.5ex;
+    text-align: center;
+  }
+
+}
+
