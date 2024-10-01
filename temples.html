@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temples</title>
+    <title>Temple Album</title>
     <meta name="description" content="Picture Album">
     <meta name="author" content="Louis Chilumba">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,77 +14,105 @@
     <script src="scripts/temples.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <div class="logo">
-                <a href="temples.html">Temple Album</a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-        
-    </header>
-    <main>
-        <div class="heading">
-            <h2>Home</h2>
+    <header class="header">
+        <div class="header__nav">
+          <h1 class="header__title">
+            Temple Album
+          </h1>
+          <div class="header__icon" id="navHamburger">
+            ☰
+          </div>
         </div>
-        <figure class="gallery">
-            <div class="one">
-                <img src="images/joburg" alt="" height="200" width="350">
-                <p>Johannesburg South Africa</p>
-            </div>
-            <div class="two">
-                <img src="images/Accra.jpg" alt="" height="200" width="350">
-                <p>Accra Ghana</p>
-            </div>
-            <div class="three">
-                <img src="images/Durban.jpg" alt="" height="200" width="350">
-                <p>Durban South Africa</p>
-            </div>
-            <div class="four">
-                <img src="images/DC Temple.jpg" alt="" height="200" width="350">
-                <p>Washington D.C</p>
-            </div>
-            <div class="five">
-                <img src="images/Salt lake temple" alt="" height="200" width="350">
-                <p>Salt Lake City</p>
-            </div>
-            <div class="six">
-                <img src="images/Prestontemple2.webp" alt="" height="200" width="350">
-                <p>Preston England</p>
-            </div>
-            <div class="seven">
-                <img src="images/Freiberg_Tempel.jpeg" alt="" height="200" width="350">
-                <p>Freiberg Germany</p>
-            </div>
-            <div class="eight">
-                <img src="images/Melbourne.jpg" alt="" height="200" width="350">
-                <p>Melbourne Australia</p>
-            </div>
-            <div class="nine">
-                <img src="images/paris_france_temple_exterior.webp" alt="" height="200" width="350">
-                <p>Paris France</p>
-            </div>
-        </figure>
-    </main>
-    <footer>
-        <div id="footer-content">
-            <h3>&copy;2024 | Louis Chilumba | Zambia</h3>
-            <div id="date-display">
-                <p id="last">Last Modified:</p><p id="datetime"></p>
-            </div>
-            
-        </div>   
-    </footer>
+        <nav class="nav">
+          <ul class="nav__menu">
+            <li class="nav__menu-item">
+              <a href="#" class="nav__menu-link">Home</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" class="nav__menu-link">Old</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" class="nav__menu-link">New</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" class="nav__menu-link">Large</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" class="nav__menu-link">Small</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    
+      <main>
+        <h2 class="subtitle">Temples</h2>
+        <div class="grid">
+          <div class="card">
+            <figure class="card__figure">
+              <img class="card__image" src="./images/joburg" alt="">
+              <figcaption class="thumbnail">Johannesburg South Africa</figcaption>
+            </figure>
+          </div>
+          <div class="card">
+            <figure class="card__figure">
+              <img class="card__image" src="./images/Accra.jpg" alt="">
+              <figcaption class="thumbnail">Accra Ghana</figcaption>
+            </figure>
+          </div>
+          <div class="card">
+            <figure class="card__figure">
+              <img class="card__image" src="./images/Durban.jpg" alt="">
+              <figcaption class="thumbnail">Durban South Africa</figcaption>
+            </figure>
+          </div>
+          <div class="card">
+            <figure class="card__figure">
+              <img class="card__image" src="./images/DC Temple.jpg" alt="">
+              <figcaption class="thumbnail">Washington D.C</figcaption>
+            </figure>
+          </div>
+          <div class="card">
+            <figure class="card__figure">
+              <img class="card__image" src="./images/Freiberg_Tempel.jpeg"
+                alt="">
+              <figcaption class="thumbnail">Freiberg Germany</figcaption>
+            </figure>
+          </div>
+          <div class="card">
+            <figure class="card__figure">
+              <img class="card__image" src="./images/Melbourne.jpg"
+                alt="">
+              <figcaption class="thumbnail">Melbourne Australia</figcaption>
+            </figure>
+          </div>
+          <div class="card">
+            <figure class="card__figure">
+              <img class="card__image" src="./images/Salt lake temple" alt="">
+              <figcaption class="thumbnail">Salt Lake City</figcaption>
+            </figure>
+          </div>
+          <div class="card">
+            <figure class="card__figure">
+              <img class="card__image" src="./images/paris_france_temple_exterior.webp"
+                alt="salta_argentina_temple_exterior">
+              <figcaption class="thumbnail">Paris France</figcaption>
+            </figure>
+          </div>
+          <div class="card">
+            <figure class="card__figure">
+              <img class="card__image" src="./images/Prestontemple2.webp"
+                alt="san_juan_puerto_rico_temple_exterior">
+              <figcaption class="thumbnail">Prestone England</figcaption>
+            </figure>
+          </div>
+      </main>
+    
+      <footer class="footer">
+        <p>
+          &copy; <span id="currentyear">0</span> <span>| </span>Louis Chilumba
+          <span><span>| </span>Zambia</span>
+        </p>
+        <p id="lastModified">0</p>
+      </footer>
 </body>
 </html>

@@ -1,12 +1,23 @@
-const burger = document.querySelector('.burger');
-const navLinks = document.querySelector('.nav-links');
+document.getElementById("navHamburger").addEventListener("click", function () {
+    console.log("click");
+    document.querySelector(".nav .nav__menu").classList.toggle("show");
+  });
 
-burger.addEventListener('click', () => {
-    navLinks.classList.toggle('nav-active');
+const date = new Date();
 
-    // Burger Animation
-    burger.classList.toggle('toggle');
-});
+function getCurrentYear(date) {
+  return date.getFullYear();
+}
 
-var dt = new Date(document.lastModified);
-document.getElementById("datetime").innerHTML = dt.toLocaleString();
+function getLastModified(date) {
+  return `${new Intl.DateTimeFormat("en-US", {
+    dateStyle: "short",
+  }).format(date)}`;
+}
+
+const currentYearElement = document.getElementById("currentyear");
+currentYearElement.innerHTML = getCurrentYear(date);
+
+const lastModifiedElement = document.getElementById("lastModified");
+lastModifiedElement.innerHTML = `Last Updated: ${getLastModified(date)}`;
+lastModifiedElement.classList.add("footer__text-accent");
