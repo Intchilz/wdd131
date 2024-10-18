@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="Filtered Picture Album">
+    <meta name="author" content="Louis Chilumba">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="styles/filtered-temple.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__nav">
+          <h1 class="header__title">
+            Temple Album
+          </h1>
+          <div class="header__icon" id="navHamburger">
+            ☰
+          </div>
+        </div>
+        <nav class="nav">
+          <ul class="nav__menu">
+            <li class="nav__menu-item">
+              <a href="#" class="nav__menu-link">Home</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" class="nav__menu-link">Old</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" class="nav__menu-link">New</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" class="nav__menu-link">Large</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" class="nav__menu-link">Small</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    
+      <main>
+        <h2 class="subtitle">Temples</h2>
+        <div class="grid" id="templesContainer"></div>
+      </main>
+    
+      <footer class="footer">
+        <p>
+          &copy; <span id="currentyear">0</span> <span>| </span>Louis Chilumba
+          <span><span>| </span>Zambia</span>
+        </p>
+        <p id="lastModified">0</p>
+      </footer>
+</body>
+</html>
