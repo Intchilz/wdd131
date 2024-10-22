@@ -1,0 +1,17 @@
+fieldset {
+    text-align: center;
+}
+
+.review-confirmation {
+    text-align: center;
+}
+
+form {
+    
+    max-height: 70%;
+    margin: 2em auto;
+
+    background-color:lightgray;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
