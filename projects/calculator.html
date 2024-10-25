@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Calculator</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="formulas.html">Formulas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Quadratic Equation Solver</h2>
+            <form id="quadratic-form">
+                <input type="number" id="a" placeholder="a" required>
+                <input type="number" id="b" placeholder="b" required>
+                <input type="number" id="c" placeholder="c" required>
+                <button type="submit">Solve</button>
+            </form>
+            <div id="quadratic-result"></div>
+        </section>
+        <section>
+            <h2>Fahrenheit to Celsius</h2>
+            <input type="number" id="fahrenheit" placeholder="Fahrenheit">
+            <button id="convert-fc">Convert</button>
+            <div id="celsius-result"></div>
+        </section>
+        <section>
+            <h2>Pounds to Kilograms</h2>
+            <input type="number" id="pounds" placeholder="Pounds">
+            <button id="convert-pk">Convert</button>
+            <div id="kg-result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Math Website</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
