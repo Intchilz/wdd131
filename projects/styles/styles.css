@@ -1,0 +1,289 @@
+:root {
+    --font-text: "montserrat", sans-serif;
+    --font-title: "montserrat alternates", sans-serif;
+    --color-primary: #004aad;
+    --color-secondary: #333333;
+    --color-accent: #8bbf39;
+    --color-white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:var(--font-text);
+}
+
+.navbar {
+    background-color: white;
+    color: white;
+    padding: 15px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    text-decoration: none;
+    color:#004aad;
+    padding-left: 3cap;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 100px;
+}
+
+.nav-links a {
+    color:gray;
+    text-decoration: none;
+    font-size:large;
+}
+.nav-links a.active {
+    color: var(--color-accent); /* Active link color */
+}
+
+.nav-links a:hover {
+    color: var(--color-accent)
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.site-name h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-right: 2rem;
+    color:var(--color-secondary)
+}
+
+.site-name h2 p {
+    font-size:3em;
+    font-family:var(--font-title);
+}
+
+#image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.image-container img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-container {
+    flex: 1;
+}
+
+.text_container h2 {
+    text-align: center;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.hidden {
+    display: none;
+}
+
+.viewport {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column {
+    list-style-type: none;
+    padding: 0;
+    width: 30%; /* Adjust to fit four columns in a row */
+}
+
+.column li {
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.try-us-out {
+    background-color: #f0f0f0; /* Light grey background */
+    text-align: center; /* Center the text and button */
+    padding: 3rem; /* Padding for spacing */
+    margin: 0; /* Margin for spacing from other elements */
+    border-radius: 5px; /* Slight rounding of corners */
+}
+
+.try-us-out h2 {
+    margin: 0 0 10px; /* Margin to separate heading from button */
+    font-size: 24px; /* Heading font size */
+}
+
+.get-started {
+    background-color:var(--color-accent); /* Button background color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button text size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.get-started a {
+    text-decoration: none;
+    color: white; /* Button text color */
+}
+
+.get-started:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+.footer {
+    background-color: #333; /* Dark background */
+    color: white; /* Text color */
+    padding: 20px; /* Padding for spacing */
+    text-align: center; /* Center text */
+}
+
+.footer-content {
+    max-width: 1200px; /* Maximum width for content */
+    margin: 0 auto; /* Center the content */
+}
+
+.social-media {
+    margin-top: 10px; /* Space above social media links */
+}
+
+.social-icon {
+    margin: 0 10px; /* Spacing between icons */
+}
+
+.social-icon img {
+    width: 24px; /* Icon size */
+    height: 24px; /* Icon size */
+    vertical-align: middle; /* Aligns icon with text */
+    transition: transform 0.3s; /* Smooth scale effect on hover */
+}
+
+.social-icon:hover img {
+    transform: scale(1.1); /* Scale up icon on hover */
+}
+
+.calculator-section {
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding for spacing */
+    margin: 15px 0; /* Margin between sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center text */
+}
+
+h2 {
+    color: #333; /* Darker color for headings */
+    margin-bottom: 15px; /* Space below headings */
+}
+
+input[type="number"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px; /* Padding for input fields */
+    margin: 10px 0; /* Margin for spacing */
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+#quadratic-result,
+#celsius-result,
+#kg-result {
+    margin-top: 15px; /* Space above results */
+    font-size: 18px; /* Font size for results */
+}
+
+.formulas-section {
+    background-color: #f0f0f0; /* Gray background */
+    text-align: center;        /* Center alignment */
+    padding: 20px;            /* Spacing inside the section */
+    margin: 20px;             /* Margin around the section */
+    border-radius: 8px;      /* Rounded corners */
+}
+
+h2 {
+    font-size: 2em;           /* Font size for the main heading */
+    margin-bottom: 15px;      /* Space below the heading */
+}
+
+h3 {
+    font-size: 1.5em;         /* Font size for subheadings */
+    margin: 10px 0;           /* Space above and below each subheading */
+}
+
+p {
+    font-size: 1.2em;         /* Font size for paragraphs */
+    margin: 5px 0 20px;       /* Space above and below paragraphs */
+}
+

@@ -3,33 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulas</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Math Calc</title>
+    <meta name="description" content="Math Calc Project">
+    <meta name="author" content="Louis Chilumba">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/large-styles.css">
+    <script src="scripts/headscript.js" defer></script>
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Formulas</h1>
-        <nav>
-            <ul>
+      <nav class="navbar">
+        <div class="navbar-container">
+            <a class="logo"href="index.html"><strong>Math Calc</strong></a>
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="calculator.html">Calculator</a></li>
-                <li><a href="formulas.html">Formulas</a></li>
+                <li><a href="calculator.html" >Calculations</a></li>
+                <li><a href="formulas.html"class="active">Resources</a></li>
             </ul>
-        </nav>
+        </div>
+      </nav>
     </header>
     <main>
-        <section>
+        <section class="hero">
+            <div class="site-name">
+              <h2>Resources</h2>
+              <p><i>“You don't have to be a mathematician to have a feel for numbers.”</i></p>
+              <p>- John Forbes Nash, Jr.</p> 
+              
+            </div>
+            <div id="image-container">
+              <img src="images/home hero.webp" alt="Math Image" loading="lazy">
+            </div>
+        </section>
+        <section class="formulas-section">
             <h2>Common Formulas</h2>
             <h3>Quadratic Formula</h3>
             <p>x = (-b ± √(b² - 4ac)) / (2a)</p>
+            
             <h3>Temperature Conversion</h3>
             <p>C = (F - 32) × 5/9</p>
+            
             <h3>Weight Conversion</h3>
             <p>Kg = Pounds × 0.453592</p>
+        
+            <h3>Pythagorean Theorem</h3>
+            <p>a² + b² = c²</p>
+        
+            <h3>Area of a Circle</h3>
+            <p>A = πr²</p>
+        
+            <h3>Simple Interest</h3>
+            <p>I = Prt</p>
+        
+            <h3>Distance Formula</h3>
+            <p>d = √((x₂ - x₁)² + (y₂ - y₁)²)</p>
         </section>
+           
     </main>
-    <footer>
-        <p>&copy; 2024 Math Website</p>
-    </footer>
+    <footer class="footer">
+      <div class="footer-content">
+          <p>&copy; 2024 Math Calc Site. All rights reserved.</p>
+          <div class="social-media">
+              <a href="#" class="social-icon">
+                  <img src="images/facebook-icon.webp" alt="Facebook">
+              </a>
+              <a href="#" class="social-icon">
+                  <img src="images/x icon.webp" alt="Twitter">
+              </a>
+              <a href="#" class="social-icon">
+                  <img src="images/Instagram_logo_2022.svg" alt="Instagram">
+              </a>
+          </div>
+      </div>
+  </footer>    
 </body>
 </html>

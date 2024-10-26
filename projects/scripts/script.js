@@ -1,9 +1,3 @@
-document.getElementById("menu-icon").addEventListener("click", function() {
-    const navLinks = document.getElementById("nav-links");
-    navLinks.style.display = navLinks.style.display === "flex" ? "none" : "flex";
-});
-
-
 document.getElementById("quadratic-form").addEventListener("submit", function(event) {
     event.preventDefault();
     const a = parseFloat(document.getElementById("a").value);
@@ -36,4 +30,3 @@ document.getElementById("convert-pk").addEventListener("click", function() {
     const kg = pounds * 0.453592;
     document.getElementById("kg-result").innerText = `${pounds} lbs = ${kg.toFixed(2)} kg`;
 });
-

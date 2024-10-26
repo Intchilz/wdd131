@@ -2,37 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Calc</title>
-    <!DOCTYPE html>
     <meta name="description" content="Math Calc Project">
     <meta name="author" content="Louis Chilumba">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" >
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="scripts/temples.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/large-styles.css">
+    <script src="scripts/headscript.js" defer></script>
 </head>
 <body>
     <header>
       <nav class="navbar">
         <div class="navbar-container">
-            <div class="logo"><a class="logo_head"href="index.html">Math Calc</a></div>
+            <a class="logo"href="index.html"><strong>Math Calc</strong></a>
             <div class="menu-icon" id="menu-icon">&#9776;</div>
             <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="calculator.html">Calculations</a></li>
-                <li><a href="formulas.html"></a>Resources</li>
+                <li><a href="formulas.html">Resources</a></li>
             </ul>
         </div>
       </nav>
     </header>
     <main>
-        <p>Main Content goes here</p>
+        <section class="hero">
+          <div class="site-name">
+            <h2>Math Calc</h2>
+            <p><i>“You don't have to be a mathematician to have a feel for numbers.”</i></p>
+            <p>- John Forbes Nash, Jr.</p> 
+            
+          </div>
+          <div id="image-container">
+            <img src="images/home hero.webp" alt="Math Image" loading="lazy">
+          </div>
+        </section>
+        <section class="about">
+          <h2 class="hidden">About Math Calc</h2>
+          <div class="image-container">
+            <img src="images/public math.webp" alt="Math Concept Image" loading="lazy">
+          </div>
+          <div class="text-container">
+            <br>
+            <h2>About Math Calc</h2>
+            <br>
+            <p>
+              Math Calc is your go-to resource for mastering mathematics. 
+              We offer step-by-step guides, interactive tools, and a supportive 
+              community to help you tackle any math challenge. Whether you are a 
+              student, teacher, or math enthusiast, you will find valuable resources 
+              tailored just for you.
+            </p>
+            <br>
+            <p>
+              The purpose of the site is to serve as a Math learning hub.
+              It will contain mathematical formulas and equations. 
+              The site will calculate answers for various 
+              equations like quadratic equations, conversion from Fahrenheit 
+              to Celsius, from pounds to kgs and will provide a few formulas.
+            </p>
+          </div>
+      </section>
+      <div class="viewport">
+        <div class="row">
+            <ul class="column">
+                <li><strong>Conversion Techniques</strong></li>
+                <li>Unit conversions</li>
+                <li>Different measurement systems</li>
+                <li>Common conversions</li>
+              </ul>
+            </ul>
+            <ul class="column">
+                <li><strong>Math Formulas</strong></li>
+                <li>Derivative rules</li>
+                <li>Integration formulas</li>
+                <li>Limits and continuity formulas.</li>
+            </ul>
+            <ul class="column">
+                <li><strong>Equations</strong></li>
+                <li>Techniques for common calculus equations.</li>
+                <li>How to derive key equations.</li>
+                <li>Online conversions and calculations.</li>
+            </ul>
+        </div>
+      </div>
+      <div class="try-us-out">
+        <h2>Want to try us out?</h2>
+        <button class="get-started"><a href="formulas.html">Get Started</a></button>
+      </div> 
     </main>
-    <footer>
-        <p>Footer Area</p>
-    </footer>
+    <footer class="footer">
+      <div class="footer-content">
+          <p>&copy; 2024 Math Calc Site. All rights reserved.</p>
+          <div class="social-media">
+              <a href="#" class="social-icon">
+                  <img src="images/facebook-icon.webp" alt="Facebook">
+              </a>
+              <a href="#" class="social-icon">
+                  <img src="images/x icon.webp" alt="Twitter">
+              </a>
+              <a href="#" class="social-icon">
+                  <img src="images/Instagram_logo_2022.svg" alt="Instagram">
+              </a>
+          </div>
+      </div>
+  </footer>    
 </body>
 </html>
